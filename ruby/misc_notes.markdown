@@ -13,3 +13,7 @@
     - '100' and 100.0 are a string and a float
       * for both, calling to_i (to integer) will result in 100.
       * that is, if it looks like a number and acts like a number, it's a number.
+
+## Functions
+  * every function returns something.
+  * if not explicitly specified, what is returned is the value of the last expression processed before the function completes.
