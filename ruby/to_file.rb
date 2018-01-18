@@ -8,8 +8,25 @@ module ToFile
     end
 end
 
+module ToFileWithoutCodeBlocks
+    def filename 
+        "object_#{self.object_id}.txt"
+    end
+
+    def write_file(f)
+        f.write(to_s)
+    end
+
+    def to_f
+        f = File.open(filename, 'w')
+        write_file(f)
+    end
+end
+
+
 class Person
-    include ToFile
+    # include ToFile
+    include ToFileWithoutCodeBlocks
     attr_accessor :name
 
     def initialize(name)
@@ -21,4 +38,4 @@ class Person
     end
 end
 
-Person.new('kfcampbell').to_f
+Person.new('kfcampbell_without_code_blocks').to_f

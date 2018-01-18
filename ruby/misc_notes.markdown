@@ -17,3 +17,8 @@
 ## Functions
   * every function returns something.
   * if not explicitly specified, what is returned is the value of the last expression processed before the function completes.
+
+## Arrays
+  * super flexible
+  * can hold any types together
+  * can be used as a queue, linked list, stack, or set. 
