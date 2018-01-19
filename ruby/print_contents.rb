@@ -4,3 +4,7 @@ a.each do |x|
     next unless x % 4 == 0
     puts "#{x}, #{x+1}, #{x+2}, #{x+3}"
 end
+
+puts '--------------'
+
+a.each_slice(4) {|x| p x}
